@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="logo/App_Icon-rounded.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="Join the TacticMax waitlist for early access to a mobile-first chess tactics app built around Puzzle Rush."
+  >
+  <title>TacticMax Waitlist</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Manrope:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="styles.css">
+  <script src="config.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="TacticMax home">
+        <img class="brand-logo" src="logo/logo.png" alt="TacticMax logo">
+        <span class="brand-copy">
+          <strong>TacticMax</strong>
+          <small>Chess tactics for fast daily reps</small>
+        </span>
+      </a>
+      <a class="button button-secondary header-cta" href="#waitlist">Join waitlist</a>
+    </header>
+
+    <main id="top">
+      <section class="hero section reveal">
+        <div class="hero-copy">
+          <p class="eyebrow">Puzzle Rush first</p>
+          <h1>Join the Waitlist for TacticMax.</h1>
+          <p class="hero-text">
+            TacticMax is a mobile-first chess training app built around Puzzle Rush,
+            daily puzzles, and vision training so you can get sharp without overthinking your session.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#waitlist">Join Waitlist</a>
+            <a
+              class="button button-secondary"
+              href="https://tacticmax.netlify.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Visit Website
+            </a>
+          </div>
+          <ul class="hero-points" aria-label="Product highlights">
+            <li>Puzzle Rush is the main hook for fast, repeatable tactical reps</li>
+            <li>Built for phones first, with a cleaner experience and less friction</li>
+            <li>Daily puzzle and vision trainer keep practice fresh beyond the rush mode</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual">
+          <div class="phone-stage">
+            <div class="hero-slider" aria-label="TacticMax screenshots">
+              <div class="hero-slide">
+                <img
+                  class="app-shot hero-shot"
+                  src="Screenhots/Puzzle_Rush.jpeg"
+                  alt="Puzzle Rush mode in TacticMax"
+                >
+              </div>
+              <div class="hero-slide">
+                <img
+                  class="app-shot hero-shot"
+                  src="Screenhots/Home.jpeg"
+                  alt="TacticMax home screen"
+                >
+              </div>
+              <div class="hero-slide">
+                <img
+                  class="app-shot hero-shot"
+                  src="Screenhots/Daily_puzzle.jpeg"
+                  alt="Daily puzzle screen in TacticMax"
+                >
+              </div>
+              <div class="hero-slide">
+                <img
+                  class="app-shot hero-shot"
+                  src="Screenhots/Vision_Trainer.jpeg"
+                  alt="Vision trainer screen in TacticMax"
+                >
+              </div>
+              <div class="hero-slide">
+                <img
+                  class="app-shot hero-shot"
+                  src="Screenhots/Rated_puzzles.jpeg"
+                  alt="Rated puzzles screen in TacticMax"
+                >
+              </div>
+              <div class="hero-slide">
+                <img
+                  class="app-shot hero-shot"
+                  src="Screenhots/Custom_Puzzles.jpeg"
+                  alt="Custom puzzles screen in TacticMax"
+                >
+              </div>
+              <div class="hero-slide">
+                <img
+                  class="app-shot hero-shot"
+                  src="Screenhots/Game_over1.jpeg"
+                  alt="Game over screen in TacticMax"
+                >
+              </div>
+              <div class="hero-slide">
+                <img
+                  class="app-shot hero-shot"
+                  src="Screenhots/Game_over2.jpeg"
+                  alt="Game over stats screen in TacticMax"
+                >
+              </div>
+            </div>
+            <div class="slider-meta" aria-label="Screenshot slider details">
+              <div class="slider-dots" id="hero-slider-dots" aria-label="Screenshot progress"></div>
+              <p class="slider-caption">From blunders to brilliance.</p>
+            </div>
+          </div>
+          <div class="hero-badges" aria-label="Key promises">
+            <span>Fast rounds</span>
+            <span>Mobile first</span>
+            <span>Sharp daily practice</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section compact-section reveal">
+        <div class="feature-list">
+          <article class="feature-card">
+            <p class="feature-kicker">Main hook</p>
+            <h2>Puzzle Rush</h2>
+            <p>Jump into quick tactical runs built to keep you moving and coming back.</p>
+          </article>
+          <article class="feature-card">
+            <p class="feature-kicker">Stay consistent</p>
+            <h2>Daily Puzzle</h2>
+            <p>Open the app, solve one strong position, and keep the habit alive.</p>
+          </article>
+          <article class="feature-card">
+            <p class="feature-kicker">See more</p>
+            <h2>Vision Trainer</h2>
+            <p>Train board awareness and pattern recognition under light pressure.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal" id="waitlist">
+        <div class="waitlist-wrap">
+          <div class="waitlist-copy">
+            <p class="eyebrow">Join the waitlist</p>
+            <h2>Get launch updates and early access when TacticMax opens up.</h2>
+            <p>
+              If Puzzle Rush feels like your kind of training, leave your email and
+              I will send launch news and early access details. For the full feature breakdown,
+              visit the website.
+            </p>
+          </div>
+
+          <aside class="waitlist-panel">
+            <form
+              id="waitlist-form"
+              class="waitlist-form"
+              name="waitlist"
+              method="POST"
+              action="/success.html"
+              data-netlify="true"
+              netlify-honeypot="company"
+            >
+              <input type="hidden" name="form-name" value="waitlist">
+              <input type="hidden" name="page_url" id="page-url">
+              <input type="hidden" name="referrer" id="referrer">
+
+              <div class="honeypot" aria-hidden="true">
+                <label for="company">Company</label>
+                <input id="company" name="company" type="text" tabindex="-1" autocomplete="off">
+              </div>
+
+              <label class="field">
+                <span>Email</span>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  maxlength="255"
+                  placeholder="you@example.com"
+                  autocomplete="email"
+                  required
+                >
+              </label>
+
+              <label class="checkbox-field">
+                <input id="consent" name="consent" type="checkbox" value="true" required>
+                <span>I agree to receive launch updates about TacticMax.</span>
+              </label>
+
+              <button class="button button-primary button-submit" type="submit">
+                Join the waitlist
+              </button>
+
+              <p class="form-note">
+                No spam. Just launch updates, early access, and major product news.
+              </p>
+            </form>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section faq-section reveal" id="faq">
+        <div class="section-heading">
+          <p class="eyebrow">FAQ</p>
+          <h2>Quick answers.</h2>
+        </div>
+
+        <div class="faq-list">
+          <article class="faq-item">
+            <h3>What makes TacticMax different?</h3>
+            <p>It is focused on fast tactical training on mobile, with Puzzle Rush as the main draw.</p>
+          </article>
+          <article class="faq-item">
+            <h3>What do I get from the waitlist?</h3>
+            <p>You get launch updates, beta access news, and a heads-up before the public rollout.</p>
+          </article>
+          <article class="faq-item">
+            <h3>Is there more than Puzzle Rush?</h3>
+            <p>Yes. Daily Puzzle, Vision Trainer, rated puzzles, and custom puzzle modes are part of the app too.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; <span id="year"></span> TacticMax. Built by MTech Forge.</p>
+      <a href="https://mtechstudio-cloud.github.io/chess-puzzle-privacy/privacy_policy.html">Privacy policy</a>
+    </footer>
+  </div>
+</body>
+</html>
